@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="155.0" prefWidth="392.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="ex01.Controller">
+   <opaqueInsets>
+      <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+   </opaqueInsets>
+   <children>
+      <TextField fx:id="tf" editable="false" layoutX="51.0" layoutY="57.0" />
+      <Button layoutX="238.0" layoutY="57.0" mnemonicParsing="false" onAction="#btnFunc" text="Button" />
+      <TextField fx:id="tf02" layoutX="51.0" layoutY="92.0" />
+   </children>
+</AnchorPane>
