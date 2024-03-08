@@ -29,8 +29,12 @@ public class MemberController implements Initializable{
 		ms.setRoot(root);
 		this.root = root;
 	}
+	public MemberController() {
+		System.out.println("생성자 초기화--"+cmbAge);
+	}
 	@Override
-	public void initialize(URL arg0, ResourceBundle arg1) {
+	public void initialize(URL arg0, ResourceBundle arg1) {//생성자로 초기화안됨
+		System.out.println("초기화 실행--"+cmbAge);
 		ms = new MemberServiceImpl();
 		
 		String[] cmbTxt= {"20대미만", "20대", "30대","40대", "50대이상"};

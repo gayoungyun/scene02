@@ -34,8 +34,9 @@ public class MemberMain {
 			//fxPath : 현재 프로젝트 위치 +member
 			URL url = new URL(URLService.fxPath+"member/fxml/member.fxml");
 			FXMLLoader loader = new FXMLLoader(url);
+			System.out.println("로드 전 실행");
 			root = loader.load();
-			
+			System.out.println("로드 후 실행");
 			MemberController ctrl = loader.getController();
 			ctrl.setRoot(root);
 			
